@@ -4,6 +4,18 @@ let veneerFlr = 0
 let masFlr = 0
 let ICFFlr = 2
 // these are all my variables
+
+if totflr >= 3 {
+  return
+  console.log ('Total floors must be equal to, or less than 3');
+}
+if veneerFlr + masFlr + ICFFlr >= totFlr {
+  return
+  console.log ('Total number of floor facades must be equal to, or less than the total number of floors.');
+}
+ /* Checks to make sure that the number of total floors is equal to, or less than three.
+ Checks to make sure that number of facade floors is equal to, or less than the number of total floors.
+ */
 if (totFlr === 1) {
   baseSize +=250 ;
 } else if (totFlr === 2) {
