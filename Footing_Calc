@@ -1,0 +1,30 @@
+let totFlr = 3
+var baseSize = 0;
+let veneerFlr = 0 
+let masFlr = 0
+let ICFFlr = 2
+// these are all my variables
+if (totFlr === 1) {
+  baseSize +=250 ;
+} else if (totFlr === 2) {
+  baseSize += 350;
+} else if (totFlr === 3) {
+  baseSize += 450;
+}
+else {
+  baseSize = 0;
+}
+console.log ('The base footing width is ' + baseSize + ' mm.')
+/* 
+this calculates my base footing size before adding the cladding, and prints out what size that is
+*/
+var adjustment = (veneerFlr * 65) +
+(masFlr * 130) +
+(ICFFlr *150);
+console.log ('The amount to add to the footing based on the cladding is ' + adjustment + 'mm.')
+/* this calculates the adjustment based on the number of floors and type of cladding, and prints out what that is
+*/
+var totFooting = (adjustment + baseSize);
+console.log ('The total footing width is ' + totFooting + 'mm.')
+/* This prints out the total footing thickness
+*/
